@@ -7,9 +7,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 window.onload = function() {
 try {
-    if (!/^https?:\/\/rzagreb\.github\.io/i.test(window.location.href)) {throw new Error('Invalid URL');}
+    //if (!/^https?:\/\/rzagreb\.github\.io/i.test(window.location.href)) {throw new Error('Invalid URL');}
     let u = new URLSearchParams(window.location.search).get('u');
-    if (!/^https?:\/\//i.test(u)){u = 'https://' + u;}
-    if (u) {window.location.replace(u);}
-} catch (e) {document.body.textContent = 'No action taken. It looks like you accessed this page without specifying the required "u" parameter in the URL.';}};
+    if (u) {
+        if (!/^https?:\/\//i.test(u)){u = 'https://' + u;}
+        window.location.replace(u);
+    }
+} catch (e) {console.log(e);}};
 </script></head><body></body></html>
