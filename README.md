@@ -23,4 +23,4 @@ https://rzagreb.github.io/r?url=https%3A%2F%2Fexample.com&utm_source=example
 3. Host on Github Pages
    1. Go to the repository Settings.
    2. Navigate to the Pages section.
-   3. Set the Branch to /(root) and save.
+   3. Set the Branch to `/(root)` and save.
