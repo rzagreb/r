@@ -7,7 +7,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 window.onload = function() {
 try {
-    //if (!/^https?:\/\/rzagreb\.github\.io/i.test(window.location.href)) {throw new Error('Invalid URL');}
     let u = new URLSearchParams(window.location.search).get('u');
     if (u) {
         if (!/^https?:\/\//i.test(u)){u = 'https://' + u;}
